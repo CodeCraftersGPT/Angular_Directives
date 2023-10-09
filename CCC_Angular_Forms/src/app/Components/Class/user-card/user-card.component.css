@@ -1,0 +1,28 @@
+/* user-card.component.css */
+
+/* Default styling for the user card */
+.user-card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin: 10px;
+  }
+  
+  /* Active user styling */
+  .active {
+    border-color: #4caf50; /* Green border */
+    background-color: #d4f6d0; /* Light green background */
+  }
+  
+  /* Inactive user styling */
+  .inactive {
+    border-color: #f44336; /* Red border */
+    background-color: #fbd8db; /* Light red background */
+  }
+  
+  /* Admin user styling */
+  .admin {
+    border-color: #2196f3; /* Blue border */
+    background-color: #cbe7ff; /* Light blue background */
+  }
+  
