@@ -1,0 +1,11 @@
+<div class="user-card" [ngClass]="{'active': isActive, 'inactive': !isActive, 'admin': isAdmin}">
+  demonstration with class  
+  <h2>{{ name }}</h2>
+    <p>Status: {{ status }}</p>
+  </div>
+
+  <div [ngStyle]="{'color': isActive ? 'green' : 'red'}">
+    demonstration with Styles
+    <h2>{{ name }}</h2>
+    <p>Status: {{ status }}</p>
+  </div>
