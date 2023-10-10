@@ -6,19 +6,25 @@ import { AppComponent } from './app.component';
 import { SwitchComponent } from './Components/SwitchExample/switch/switch.component';
 import { UserCardComponent } from './Components/Class/user-card/user-card.component';
 import { IfelsewelcomeComponent } from './Components/ifelse/ifelsewelcome/ifelsewelcome.component';
+import { HighlightDirective } from './Directives/highlight.directive';
+import { AuthComponent } from './Directives/structural/auth/auth.component';
+import { AuthDirective } from './Directives/structural/auth.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SwitchComponent,
     UserCardComponent,
-    IfelsewelcomeComponent
+    IfelsewelcomeComponent,
+    HighlightDirective,
+    AuthComponent,
+    AuthDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [IfelsewelcomeComponent]
+  bootstrap: [AuthComponent]
 })
 export class AppModule { }
