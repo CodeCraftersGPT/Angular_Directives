@@ -1,0 +1,7 @@
+    <button (click)="toggleAuthentication()">Toggle Authentication</button>
+    <div *appAuth="isAuthenticated">
+      <p>Welcome, user! You have access to this content.</p>
+    </div>
+    <div *appAuth="!isAuthenticated">
+      <p>Please log in to access this content.</p>
+    </div>

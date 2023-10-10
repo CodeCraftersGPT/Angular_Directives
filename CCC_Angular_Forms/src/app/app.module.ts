@@ -7,6 +7,8 @@ import { SwitchComponent } from './Components/SwitchExample/switch/switch.compon
 import { UserCardComponent } from './Components/Class/user-card/user-card.component';
 import { IfelsewelcomeComponent } from './Components/ifelse/ifelsewelcome/ifelsewelcome.component';
 import { HighlightDirective } from './Directives/highlight.directive';
+import { AuthComponent } from './Directives/structural/auth/auth.component';
+import { AuthDirective } from './Directives/structural/auth.directive';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,15 @@ import { HighlightDirective } from './Directives/highlight.directive';
     SwitchComponent,
     UserCardComponent,
     IfelsewelcomeComponent,
-    HighlightDirective
+    HighlightDirective,
+    AuthComponent,
+    AuthDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [UserCardComponent]
+  bootstrap: [AuthComponent]
 })
 export class AppModule { }
