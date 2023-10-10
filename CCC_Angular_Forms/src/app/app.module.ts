@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { SwitchComponent } from './Components/SwitchExample/switch/switch.component';
 import { UserCardComponent } from './Components/Class/user-card/user-card.component';
 import { IfelsewelcomeComponent } from './Components/ifelse/ifelsewelcome/ifelsewelcome.component';
+import { HighlightDirective } from './Directives/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SwitchComponent,
     UserCardComponent,
-    IfelsewelcomeComponent
+    IfelsewelcomeComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [IfelsewelcomeComponent]
+  bootstrap: [UserCardComponent]
 })
 export class AppModule { }
